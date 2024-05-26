@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Cobaan_dicobain"
         tools:targetApi="31">
         <activity
+            android:name=".FavoriteActivity"
+            android:exported="false" />
+        <activity
             android:name=".SuperFlashSaleActivity"
             android:exported="false" />
         <activity
