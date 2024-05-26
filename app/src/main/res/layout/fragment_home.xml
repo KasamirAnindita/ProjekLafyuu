@@ -1,0 +1,918 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!-- Header Layout -->
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <!-- Search Bar -->
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="43dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@id/notificationButton"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/lovebtn"
+                android:layout_width="64dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Love Button"
+                android:padding="5dp"
+                android:src="@drawable/love" />
+
+            <ImageButton
+                android:id="@+id/notificationButton"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Notification Button"
+                android:padding="5dp"
+                android:src="@drawable/notification" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/bannerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/headerLayout"
+            android:layout_marginTop="0dp"
+            android:background="@color/white">
+
+            <!-- Image Slider -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/imageSlider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/bannerLayout"
+                android:layout_marginTop="16dp"
+                app:shapeAppearanceOverlay="@style/RoundedCornerImageView"
+                android:padding="5dp"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/categoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bannerLayout"
+            android:layout_marginTop="0dp"
+            android:background="@color/white">
+
+            <!-- Teks Kategori -->
+            <TextView
+                android:id="@+id/categoryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/darkblue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/categorymore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Category"
+                android:textColor="@color/skyblue"
+                android:gravity=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_below="@id/categoryLabel">
+
+                <LinearLayout
+                    android:id="@+id/categoryContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginTop="30dp">
+
+                    <!-- Layout Vertikal untuk setiap kategori -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/categoryIcon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/product_icon"
+                            android:contentDescription="Category Icon 1"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Man Shirt"
+                            android:textColor="@color/grey"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Tambahkan blok serupa untuk setiap kategori -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/categoryIcon2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/product_icon_1"
+                            android:contentDescription="Category Icon 2"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dress"
+                            android:textColor="@color/grey"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/categoryIcon3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/product_icon_2"
+                            android:contentDescription="Category Icon 3"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man Work Equipment"
+                            android:textColor="@color/grey"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/categoryIcon4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/product_icon_3"
+                            android:contentDescription="Category Icon 4"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Woman Bag"
+                            android:textColor="@color/grey"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/categoryIcon5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/product_icon_4"
+                            android:contentDescription="Category Icon 5"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Man Shoes"
+                            android:textColor="@color/grey"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <!-- flash sale-->
+        <FrameLayout
+            android:id="@+id/FlashSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bannerLayout"
+            android:layout_marginTop="190dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/FSLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flash Sale"
+                android:textColor="@color/darkblue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/FSmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See More"
+                android:textColor="@color/skyblue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_below="@id/categoryLabel">
+
+                <LinearLayout
+                    android:id="@+id/productFScontainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginTop="45dp">
+
+                    <!-- Layout Vertikal untuk setiap kategori -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productFS1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product"
+                            android:contentDescription="Category Icon 1"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - Nike  Air Max 270 React"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$50.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <!-- Tambahkan blok serupa untuk setiap kategori -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productFS2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product_1"
+                            android:contentDescription="Category Icon 2"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - QUILTED MAXI CROS"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$25.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productFS3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product_nike_merah"
+                            android:contentDescription="Category Icon 3"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - Nike  Air Max 270 React"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$50.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productFS4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product_1"
+                            android:contentDescription="Category Icon 4"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - QUILTED MAXI CROS"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$25.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productFS5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product"
+                            android:contentDescription="Category Icon 5"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - Nike  Air Max 270 React"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$50.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <!-- mega sale-->
+        <FrameLayout
+            android:id="@+id/MegaSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FlashSale"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/MSLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mega Sale"
+                android:textColor="@color/darkblue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/MSmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See More"
+                android:textColor="@color/skyblue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_below="@id/MegaSale">
+
+                <LinearLayout
+                    android:id="@+id/productMScontainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginTop="45dp">
+
+                    <!-- Layout Vertikal untuk setiap kategori -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productMS1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product"
+                            android:contentDescription="Category Icon 1"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - Nike  Air Max 270 React"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$50.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <!-- Tambahkan blok serupa untuk setiap kategori -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productMS2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product_1"
+                            android:contentDescription="Category Icon 2"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - QUILTED MAXI CROS"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$25.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productMS3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product"
+                            android:contentDescription="Category Icon 3"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - Nike  Air Max 270 React"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$50.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productMS4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product_1"
+                            android:contentDescription="Category Icon 4"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - QUILTED MAXI CROS"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$25.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/productMS5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/image_product"
+                            android:contentDescription="Category Icon 5"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="FS - Nike  Air Max 270 React"
+                            android:textColor="@color/grey"
+                            android:gravity=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$50.00"
+                            android:textColor="@color/skyblue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bannerRecomend"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/MegaSale"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/recomended_product_banner"
+                android:layout_gravity="center"
+                android:layout_below="@id/MegaSale"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ProductDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bannerRecomend"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            >
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:padding="5dp">
+
+                <!-- Produk 1 -->
+                <LinearLayout
+                    android:id="@+id/product1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categoryPD1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_product"
+                        android:contentDescription="Category Icon 1"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nike Air"
+                        android:textColor="@color/grey"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Produk 2 -->
+                <LinearLayout
+                    android:id="@+id/product2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categoryPD2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_product_1"
+                        android:contentDescription="Category pd 2"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dress"
+                        android:textColor="@color/grey"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Produk 3 -->
+                <LinearLayout
+                    android:id="@+id/product3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categoryPD3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_product_1"
+                        android:contentDescription="Category pd 2"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dress"
+                        android:textColor="@color/grey"
+                        android:gravity="center"/>
+
+                    <!-- Tambahkan komponen ImageView dan TextView untuk produk ketiga di sini -->
+                </LinearLayout>
+
+                <!-- Produk 4 -->
+                <LinearLayout
+                    android:id="@+id/product4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/categoryPD4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_product"
+                    android:contentDescription="Category Icon 1"
+                    android:padding="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nike Air"
+                        android:textColor="@color/grey"
+                        android:gravity="center"/>
+
+                    <!-- Tambahkan komponen ImageView dan TextView untuk produk keempat di sini -->
+                </LinearLayout>
+            </GridLayout>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

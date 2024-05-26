@@ -1,0 +1,22 @@
+<resources>
+    <style name="RoundedCornerImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item> <!-- Atur ukuran sudut radius sesuai kebutuhan -->
+    </style>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Mengatur cornerSize menjadi 50% akan menghasilkan border lingkaran -->
+        <item name="strokeColor">@color/black</item> <!-- Tambahkan warna biru muda ke border -->
+        <item name="strokeWidth">10dp</item> <!-- Atur ketebalan border -->
+    </style>
+
+    <style name="BorderImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item> <!-- Atur ukuran sudut radius sesuai kebutuhan -->
+        <item name="strokeColor">@color/lightgrey</item>
+        <item name="strokeWidth">10dp</item>
+    </style>
+
+</resources>
+

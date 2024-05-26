@@ -1,0 +1,256 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/btnBacksfs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/left" />
+
+        <!-- Header Layout -->
+        <RelativeLayout
+            android:id="@+id/headerSFS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Super Flash Sale"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="150dp"
+                />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/bannerSFS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerSFS"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/offer_banner" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ProductDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bannerSFS"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            >
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:padding="5dp">
+
+                <!-- Produk 1 -->
+                <LinearLayout
+                    android:id="@+id/productsfs1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categorysfs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_productsfs"
+                        android:contentDescription=""
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nike Air"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtPricesfs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$299,43"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/skyblue"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <!-- Produk 2 -->
+                <LinearLayout
+                    android:id="@+id/productsfs2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categorysfs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_productsfs_1"
+                        android:contentDescription=""
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tas Merah"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtPricesfs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$299,43"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/skyblue"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <!-- Produk 3 -->
+                <LinearLayout
+                    android:id="@+id/productsfs3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categorysfs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_productsfs_2"
+                        android:contentDescription=""
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tas Cream"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtPricesfs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$299,43"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/skyblue"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- Tambahkan komponen ImageView dan TextView untuk produk ketiga di sini -->
+                </LinearLayout>
+
+                <!-- Produk 4 -->
+                <LinearLayout
+                    android:id="@+id/productsfs4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/categorysfs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_productsfs_3"
+                        android:contentDescription=""
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nike Air"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtPricesfs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$299,43"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/skyblue"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- Tambahkan komponen ImageView dan TextView untuk produk keempat di sini -->
+                </LinearLayout>
+            </GridLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</ScrollView>
