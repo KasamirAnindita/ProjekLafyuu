@@ -62,8 +62,114 @@ class Home : Fragment() {
 
         }
 
-        val splashLinearLayout1 = view.findViewById<LinearLayout>(R.id.productFScontainer)
+        val splashLinearLayout1 = view.findViewById<LinearLayout>(R.id.layoutFSproduct1)
         splashLinearLayout1.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout2 = view.findViewById<LinearLayout>(R.id.layoutFSproduct2)
+        splashLinearLayout2.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout3 = view.findViewById<LinearLayout>(R.id.layoutFSproduct3)
+        splashLinearLayout3.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout4 = view.findViewById<LinearLayout>(R.id.layoutFSproduct4)
+        splashLinearLayout4.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout5 = view.findViewById<LinearLayout>(R.id.layoutFSproduct5)
+        splashLinearLayout5.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        val splashLinearLayout6 = view.findViewById<LinearLayout>(R.id.layoutMSproduct1)
+        splashLinearLayout6.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout7 = view.findViewById<LinearLayout>(R.id.layoutMSproduct2)
+        splashLinearLayout7.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout8 = view.findViewById<LinearLayout>(R.id.layoutMSproduct3)
+        splashLinearLayout8.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout9 = view.findViewById<LinearLayout>(R.id.layoutMSproduct4)
+        splashLinearLayout9.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout10 = view.findViewById<LinearLayout>(R.id.layoutMSproduct5)
+        splashLinearLayout10.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        val splashLinearLayout11 = view.findViewById<LinearLayout>(R.id.producthome1)
+        splashLinearLayout11.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout12 = view.findViewById<LinearLayout>(R.id.producthome2)
+        splashLinearLayout12.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout13 = view.findViewById<LinearLayout>(R.id.producthome3)
+        splashLinearLayout13.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+            startActivity(intent)
+
+        }
+        val splashLinearLayout14 = view.findViewById<LinearLayout>(R.id.producthome4)
+        splashLinearLayout14.setOnClickListener {
             // Tindakan yang ingin dilakukan saat gambar diklik
             // Misalnya, pindah ke aktivitas lain
             val intent = Intent(requireContext(), ProductDetailActivity::class.java)
