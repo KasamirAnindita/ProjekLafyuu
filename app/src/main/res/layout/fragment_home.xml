@@ -345,8 +345,10 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - Nike  Air Max 270 React"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
+
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -384,7 +386,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - QUILTED MAXI CROS"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -400,6 +403,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/FSproduct3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -458,7 +462,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - QUILTED MAXI CROS"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -495,7 +500,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - Nike  Air Max 270 React"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -590,7 +596,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - Nike  Air Max 270 React"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -629,7 +636,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - QUILTED MAXI CROS"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -666,7 +674,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - Nike  Air Max 270 React"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -702,7 +711,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - QUILTED MAXI CROS"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -738,7 +748,8 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="FS - Nike  Air Max 270 React"
-                            android:textColor="@color/grey"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
                             android:gravity=""/>
 
                         <TextView
@@ -780,6 +791,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/bannerRecomend"
             android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/white"
             >
 
@@ -789,7 +801,8 @@
                 android:layout_height="wrap_content"
                 android:columnCount="2"
                 android:rowCount="2"
-                android:padding="5dp">
+                android:padding="5dp"
+                android:paddingBottom="10dp">
 
                 <!-- Produk 1 -->
                 <LinearLayout
@@ -816,7 +829,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Nike Air"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/darkblue"
+                        android:textStyle="bold"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -845,7 +859,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Dress"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/darkblue"
+                        android:textStyle="bold"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -874,7 +889,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Dress"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/darkblue"
+                        android:textStyle="bold"
                         android:gravity="center"/>
 
                     <!-- Tambahkan komponen ImageView dan TextView untuk produk ketiga di sini -->
@@ -905,7 +921,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Nike Air"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/darkblue"
+                        android:textStyle="bold"
                         android:gravity="center"/>
 
                     <!-- Tambahkan komponen ImageView dan TextView untuk produk keempat di sini -->
