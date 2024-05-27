@@ -10,7 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.ImageButton
 import android.widget.ImageView
+import androidx.activity.enableEdgeToEdge
 import androidx.viewpager2.widget.ViewPager2
 import com.example.cobaan_dicobain.databinding.ActivityHomeBinding
 import java.util.Timer
@@ -49,6 +51,15 @@ class Home : Fragment() {
 //            val intent = Intent(requireContext(), SuperFlashSaleActivity::class.java)
 //            startActivity(intent)
 //        }
+         //Menginisialisasi ImageView dan Button
+        val splashImageButton1 = view.findViewById<ImageButton>(R.id.lovebtn)
+        splashImageButton1.setOnClickListener {
+            // Tindakan yang ingin dilakukan saat gambar diklik
+            // Misalnya, pindah ke aktivitas lain
+            val intent = Intent(requireContext(), FavoriteActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 
     override fun onCreateView(
@@ -97,6 +108,7 @@ class Home : Fragment() {
             }
 
     }
+
 
 
 

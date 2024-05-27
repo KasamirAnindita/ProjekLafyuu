@@ -13,23 +13,23 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <ImageView
-            android:id="@+id/btnBackfav"
-            android:layout_width="wrap_content"
-            android:layout_height="34dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/left" />
-
         <!-- Header Layout -->
         <RelativeLayout
             android:id="@+id/headerfav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="22dp"
-            android:gravity="center">
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/btnBackfav"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/left" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -38,7 +38,8 @@
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:layout_marginRight="150dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="40dp"
                 />
 
         </RelativeLayout>
@@ -81,7 +82,6 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:gravity="center"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/border">
@@ -113,6 +113,18 @@
                         android:textColor="@color/skyblue"
                         android:textStyle="bold"
                         />
+
+                    <TextView
+                        android:id="@+id/discountfav1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="24% off"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/lightred"
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
 
                 <!-- Produk 2 -->
@@ -152,6 +164,17 @@
                         android:paddingLeft="10dp"
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/skyblue"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/discountfav2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="24% off"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/lightred"
                         android:textStyle="bold"
                         />
                 </LinearLayout>
@@ -196,6 +219,17 @@
                         android:textStyle="bold"
                         />
 
+                    <TextView
+                        android:id="@+id/discountfav3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="24% off"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/lightred"
+                        android:textStyle="bold"
+                        />
+
                     <!-- Tambahkan komponen ImageView dan TextView untuk produk ketiga di sini -->
                 </LinearLayout>
 
@@ -237,6 +271,17 @@
                         android:paddingLeft="10dp"
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/skyblue"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/discountfav4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="24% off"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/lightred"
                         android:textStyle="bold"
                         />
                     <!-- Tambahkan komponen ImageView dan TextView untuk produk keempat di sini -->
