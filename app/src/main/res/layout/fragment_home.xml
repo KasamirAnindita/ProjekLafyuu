@@ -323,13 +323,13 @@
 
                     <!-- Layout Vertikal untuk setiap kategori -->
                     <LinearLayout
+                        android:id="@+id/layoutFSproduct1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/border"
-
                         >
 
                         <com.google.android.material.imageview.ShapeableImageView

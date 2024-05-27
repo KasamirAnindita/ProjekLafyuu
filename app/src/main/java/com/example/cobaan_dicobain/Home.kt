@@ -12,6 +12,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.viewpager2.widget.ViewPager2
 import com.example.cobaan_dicobain.databinding.ActivityHomeBinding
@@ -61,8 +62,8 @@ class Home : Fragment() {
 
         }
 
-        val splashImageView1 = view.findViewById<ImageView>(R.id.productFS3)
-        splashImageView1.setOnClickListener {
+        val splashLinearLayout1 = view.findViewById<LinearLayout>(R.id.productFScontainer)
+        splashLinearLayout1.setOnClickListener {
             // Tindakan yang ingin dilakukan saat gambar diklik
             // Misalnya, pindah ke aktivitas lain
             val intent = Intent(requireContext(), ProductDetailActivity::class.java)
