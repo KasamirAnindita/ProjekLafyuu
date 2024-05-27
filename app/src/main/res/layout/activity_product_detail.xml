@@ -423,7 +423,10 @@
             android:layout_below="@id/Colorselect"
             android:layout_marginTop="0dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp">
+            android:layout_marginStart="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            >
 
             <TextView
                 android:id="@+id/specslabel"
@@ -438,10 +441,11 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="10dp"
+                android:padding="10dp"
                 >
 
                 <TextView
@@ -453,21 +457,27 @@
                     />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:text="Laser Blue/Red bla bla bla"
+                    android:textAlignment="textEnd"
+                    android:text="Laser
+                                   Blue/Anthracite/Watermelon/White"
                     android:textSize="18dp"
-                    android:textColor="@color/darkblue"
-                    android:layout_marginLeft="170dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/grey"
+
                     />
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="110dp"
                 android:layout_marginBottom="10dp"
+                android:padding="10dp"
                 >
 
                 <TextView
@@ -481,14 +491,148 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CD0113-400"
-                    android:textSize="18dp"
-                    android:textColor="@color/darkblue"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginLeft="170dp"
-                    />
+                    android:layout_marginEnd="20dp"
+                    android:text="CD0113-400"
+                    android:textColor="@color/grey"
+                    android:textSize="18dp" />
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    />
+            </RelativeLayout>
         </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/specsFL"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/reviewlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review"
+                    android:textColor="@color/darkblue"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/RateReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/star_rating" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/profile_picture" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="James Lawson"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/ratingreview"
+                        android:layout_width="105dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/star_rating"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imagereview1"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/product_picture" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+        </FrameLayout>
+
 
 
 
