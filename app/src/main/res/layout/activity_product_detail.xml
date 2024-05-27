@@ -66,16 +66,16 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp">
 
-            <TextView
-                android:id="@+id/txtproductname1"
-                android:layout_height="wrap_content"
-                android:text="Nike Air Zoom Pegasus 36 Miami"
-                android:textColor="@color/darkblue"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:paddingLeft="10dp"
-                android:layout_width="300dp"
-                android:layout_margin="10dp" />
+                <TextView
+                    android:id="@+id/txtproductname1"
+                    android:layout_height="wrap_content"
+                    android:text="Nike Air Zoom Pegasus 36 Miami"
+                    android:textColor="@color/darkblue"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="300dp"
+                    android:layout_margin="10dp" />
 
                 <ImageButton
                     android:id="@+id/lovePD"
@@ -141,6 +141,7 @@
                 />
 
             <HorizontalScrollView
+                android:id="@+id/SVsize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
@@ -274,6 +275,223 @@
                 </LinearLayout>
             </HorizontalScrollView>
         </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/Colorselect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sizeselect"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/ColorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Color"
+                android:textColor="@color/darkblue"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/SVcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_below="@id/categoryLabel">
+
+                <LinearLayout
+                    android:id="@+id/categorycolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginTop="30dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/color1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/red"
+                            android:contentDescription="Red"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/blue"
+                            android:contentDescription="blue"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/color3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/purple"
+                            android:contentDescription="purple"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/color4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dark"
+                            android:contentDescription="dark blue"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/color5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/green"
+                            android:contentDescription="Green"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:padding="16dp"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/specsFL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Colorselect"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/specslabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specification"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shown"
+                    android:textSize="18dp"
+                    android:textColor="@color/darkblue"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laser Blue/Red bla bla bla"
+                    android:textSize="18dp"
+                    android:textColor="@color/darkblue"
+                    android:layout_marginLeft="170dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Style:"
+                    android:textSize="18dp"
+                    android:textColor="@color/darkblue"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CD0113-400"
+                    android:textSize="18dp"
+                    android:textColor="@color/darkblue"
+                    android:layout_marginLeft="170dp"
+                    />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+
 
     </RelativeLayout>
 </ScrollView>
